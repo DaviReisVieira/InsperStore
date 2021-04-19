@@ -39,8 +39,8 @@ public class Video {
 			totalMedias+=avaliacao;
 		}
 		
-		Integer totalAvaliacoesInteger = this.avaliacoes.size();
-		Integer mediaFinalInteger = (int) Math.round(totalMedias/totalAvaliacoesInteger);
+		Integer totalAvaliacoes = this.avaliacoes.size();
+		Integer mediaFinalInteger = (int) Math.round(totalMedias/totalAvaliacoes);
 				
 		return mediaFinalInteger;
 	}
