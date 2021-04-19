@@ -31,8 +31,8 @@ class UsuarioTest {
 	
 	@Test
 	public void umaAvaliacaoValida() {
-		Video video = usuario.postaVideo(1, produto);
 		Usuario usuarioNovo = new Usuario("Aldacir Novaes");
+		Video video = usuario.postaVideo(1, produto);
 		
 		video.adicionaAvaliacao(usuarioNovo, 5);
 		
@@ -41,8 +41,8 @@ class UsuarioTest {
 	
 	@Test
 	public void duasAvaliacoesValidas() {
-		Video video = usuario.postaVideo(1, produto);
 		Usuario usuarioNovo = new Usuario("Aldacir Novaes");
+		Video video = usuario.postaVideo(1, produto);
 		
 		video.adicionaAvaliacao(usuarioNovo, 2);
 		video.adicionaAvaliacao(usuarioNovo, 5);
@@ -52,8 +52,8 @@ class UsuarioTest {
 	
 	@Test
 	public void tresAvaliacoesValidas() {
-		Video video = usuario.postaVideo(1, produto);
 		Usuario usuarioNovo = new Usuario("Aldacir Novaes");
+		Video video = usuario.postaVideo(1, produto);
 		
 		video.adicionaAvaliacao(usuarioNovo, 2);
 		video.adicionaAvaliacao(usuarioNovo, 3);
@@ -64,9 +64,9 @@ class UsuarioTest {
 	
 	@Test
 	public void umaEDuasAvaliacoesValidas() {
+		Usuario usuarioNovo = new Usuario("Aldacir Novaes");
 		Video video1 = usuario.postaVideo(1, produto);
 		Video video2 = usuario.postaVideo(2, produto);
-		Usuario usuarioNovo = new Usuario("Aldacir Novaes");
 		
 		video1.adicionaAvaliacao(usuarioNovo, 2);
 		video1.adicionaAvaliacao(usuarioNovo, 3);

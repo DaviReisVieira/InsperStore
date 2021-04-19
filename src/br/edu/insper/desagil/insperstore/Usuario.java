@@ -23,8 +23,8 @@ public class Usuario {
 		return video;
 	}
 	
-	public double totalAvaliacoes() {
-		double somaTotal = 0;
+	public Integer totalAvaliacoes() {
+		Integer somaTotal = 0;
 		
 		for (Video video: this.videos) {
 			somaTotal+=video.mediaAvaliacoes();
