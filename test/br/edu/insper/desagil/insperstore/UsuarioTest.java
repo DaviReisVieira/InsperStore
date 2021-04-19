@@ -47,7 +47,7 @@ class UsuarioTest {
 		video.adicionaAvaliacao(usuarioNovo, 2);
 		video.adicionaAvaliacao(usuarioNovo, 5);
 		
-		assertEquals(4, usuario.totalAvaliacoes(), DELTA);		
+		assertEquals(5, usuario.totalAvaliacoes(), DELTA);		
 	}
 	
 	@Test
@@ -59,7 +59,7 @@ class UsuarioTest {
 		video.adicionaAvaliacao(usuarioNovo, 3);
 		video.adicionaAvaliacao(usuarioNovo, 5);
 		
-		assertEquals(3, usuario.totalAvaliacoes(), DELTA);		
+		assertEquals(5, usuario.totalAvaliacoes(), DELTA);		
 	}
 	
 	@Test
@@ -72,7 +72,7 @@ class UsuarioTest {
 		video1.adicionaAvaliacao(usuarioNovo, 3);
 		video2.adicionaAvaliacao(usuarioNovo, 5);
 		
-		assertEquals(7, usuario.totalAvaliacoes(), DELTA);		
+		assertEquals(8, usuario.totalAvaliacoes(), DELTA);		
 	}
 
 }
