@@ -26,7 +26,7 @@ public class Video {
 	
 	public void adicionaAvaliacao(Usuario usuarioAvalidor, Integer avaliacao) {
 		if (usuarioAvalidor.getNome() != this.usuario.getNome()) {
-			if ((avaliacao>=1) && (5<=avaliacao)) {
+			if ((avaliacao>=1) && (avaliacao<=5)) {
 				this.avaliacoes.put(usuarioAvalidor.getNome(), avaliacao);
 			}
 		}
